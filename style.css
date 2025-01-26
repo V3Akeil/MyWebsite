@@ -1626,7 +1626,7 @@ noscript {
 	border-radius: 20px;
 	transition: all 0.3s ease;
 	overflow: visible;
-	cursor: pointer;
+	cursor: default;
 	border: 2px solid #FFB000;
 	box-shadow: 0 0 10px rgba(255, 176, 0, 0.3);
   }

@@ -618,7 +618,7 @@ noscript {
     border-radius: 40px;
 }
 #hello-friend {
-	font-size: 3.5rem;
+	font-size: 3rem;
 	font-weight: 600;
 	width: fit-content;
 	display: flex;
@@ -627,7 +627,7 @@ noscript {
 
 #name,
 #work {
-	font-size: 7rem;
+	font-size: 6rem;
 	width: fit-content
 }
 

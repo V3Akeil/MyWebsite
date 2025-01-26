@@ -2036,9 +2036,10 @@ footer {
   }
 
   .navbar-tabs-ul {
-    display: none; /* Hide tabs, hamburger will control menu */
+    display: none; /* Hide desktop tabs on mobile */
   }
 
+  /* Hamburger Menu */
   .hamburger {
     display: flex;
     position: absolute;
@@ -2061,18 +2062,18 @@ footer {
     z-index: 999;
   }
 
-  .mobiletogglemenu ul {
+  .mobile-navbar-tabs-ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
   }
 
-  .mobiletogglemenu li {
+  .mobile-navbar-tabs-li {
     margin: 15px 0;
   }
 
-  .mobiletogglemenu a {
+  .mobile-navbar-tabs-li a {
     color: var(--color-white);
     text-decoration: none;
     font-size: 1.8rem;
@@ -2100,27 +2101,9 @@ footer {
     text-align: justify;
   }
 
-  .video-container-wrapper {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
-  }
-
-  .youtube-video-container iframe {
-    width: 100%;
-    height: auto;
-  }
-
-  .contact-btn-div {
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-  }
-
   /* About Section */
   .about-section-container {
-    padding-top: 50px;
+    padding: 20px;
     flex-direction: column;
     align-items: center;
   }
@@ -2128,12 +2111,13 @@ footer {
   .info-dp-section {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
   }
 
   .about-info {
     width: 100%;
     padding: 10px;
+    line-height: 1.6; /* Fix extra spaces */
     text-align: justify;
   }
 
@@ -2157,12 +2141,13 @@ footer {
   }
 
   .skill-item {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: auto;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .skill-item img {
@@ -2172,7 +2157,9 @@ footer {
   }
 
   .skill-item p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    word-wrap: break-word; /* Fix cut-off titles */
   }
 
   /* Certifications Section */
@@ -2233,7 +2220,7 @@ footer {
   }
 
   .project-box {
-    width: 100%;
+    width: 90%; /* Fix compression by using a percentage */
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 15px;

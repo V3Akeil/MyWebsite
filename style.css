@@ -2150,7 +2150,6 @@ footer {
 	}
 
 	.projects-section-div,
-	.skills-section,
 	.text-content {
 		width: 80%
 	}
@@ -2551,8 +2550,7 @@ footer {
 	}
 
 	.about-section,
-	.projects-section-div,
-	.skills-section {
+	.projects-section-div {
 		width: 80%
 	}
 
@@ -2621,4 +2619,30 @@ footer {
 	.logos {
 		gap: 20px
 	}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  /* Skills Section */
+  .skills-section {
+    flex-wrap: wrap; /* Ensure items wrap to the next line */
+    gap: 15px; /* Reduce gap between items */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .skill-item {
+    width: 100px; /* Smaller size for mobile */
+    height: 100px;
+    padding: 10px; /* Add padding */
+  }
+
+  .skill-item img {
+    width: 40px; /* Smaller icon size */
+    height: 40px;
+    margin-bottom: 5px;
+  }
+
+  .skill-item p {
+    font-size: 1.2rem; /* Adjust text size */
+  }
+}
 }

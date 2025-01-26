@@ -211,22 +211,15 @@ html {
 	cursor: pointer
 }
 
-.soundtogglebuttoncontainer,
-.visualmodetogglebuttoncontainer {
-	align-items: center;
-	width: fit-content;
-	transition-duration: .3s
-}
 
 .settingactivate {
 	width: 200px
 }
 
 .visualmodetogglebuttoncontainer {
-	height: fit-content;
-	display: flex;
-	justify-content: center;
-	transform: translate(-50px) scale(0)
+    margin-right: 20px; /* Adjust as per design */
+    display: flex;
+    align-items: center;
 }
 
 .visualmodeshow {
